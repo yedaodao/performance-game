@@ -10,6 +10,8 @@ for performance test
 
 aliyun host, 1 core, 1g memory
 
+1 node process
+
 **ab data**
 
 ab -c 10000 -n 100 
