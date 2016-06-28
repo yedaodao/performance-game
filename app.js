@@ -8,8 +8,6 @@ var app = koa(),
 // 需要启动的app名称（bundle的子文件夹名称)
     startApps = ['core'];
 
-console.log(process.env.NODE_ENV);
-
 // app middleware
 app.use(koaStatic('./static'));
 

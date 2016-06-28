@@ -3,11 +3,9 @@ var render = require('../../../lib/render');
 
 module.exports = {
     render: function*() {
-        this.body = JSON.stringify({a: 1, b: 'aaa'});
+        this.body = yield render('core', 'index');
     },
     echo: function*() {
-        console.log(this.req);
-        console.log(this.query);
-        this.body = this.request.body;
+        this.body = {echo: 'hello'};
     }
 };
