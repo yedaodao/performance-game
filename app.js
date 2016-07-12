@@ -6,7 +6,7 @@ var koaStatic = require('koa-static');
 
 var app = koa(),
 // 需要启动的app名称（bundle的子文件夹名称)
-    startApps = ['core'];
+    startApps = ['core', 'hang'];
 
 // app middleware
 app.use(koaStatic('./static'));
