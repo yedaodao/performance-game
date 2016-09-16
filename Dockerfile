@@ -6,6 +6,6 @@ WORKDIR /opt/test-node
 ADD . /opt/test-node
 RUN npm install --production
 RUN rm -rf .git/
-CMD ["node",'app.js']
+ENTRYPOINT ["node",'app.js']
 
 EXPOSE 3000
