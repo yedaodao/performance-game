@@ -7,6 +7,6 @@ ADD . /opt/test-node
 # RUN npm install -g pm2
 RUN npm install --production
 RUN rm -rf .git/
-CMD ["node","app.js"]
+CMD ["node","-v"]
 
 EXPOSE 3000
